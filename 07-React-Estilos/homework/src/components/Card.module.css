@@ -1,0 +1,43 @@
+.containerWeather {
+    width: 350px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px gray solid;
+    background-color: #33373b;
+    color: white;
+    margin: 0 20px;
+}
+
+.containerWeather img {
+    margin-bottom: 20px;
+}
+
+.weather {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.minMax {
+    margin: 0 25px;
+}
+
+.btnClose {
+    background-color: transparent;
+    border: solid 1px red;
+    border-radius: 7px;
+    color: red;
+    font-weight: bold;
+    align-self: flex-end;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 1300px) {
+    .containerWeather {
+        margin:  20px 0;
+    }
+}
