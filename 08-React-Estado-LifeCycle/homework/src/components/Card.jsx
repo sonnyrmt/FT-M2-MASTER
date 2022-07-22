@@ -3,7 +3,7 @@ import './Card.css';
 
 export default function Card ({min, max, name, img, onClose, id}) {
     return (
-      <div className="card">
+      <div className="card" id={id}>
         <div id="closeIcon" className="row">
             <button onClick={onClose} className="btn btn-sm btn-danger">X</button>
         </div>
