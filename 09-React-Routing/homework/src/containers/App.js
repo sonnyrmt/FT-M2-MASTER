@@ -7,7 +7,7 @@ import About from '../components/About.jsx';
 import Ciudad from '../components/Ciudad.jsx';
 import { Route, Switch } from 'react-router-dom';
 
-const apiKey = '4ae2636d8dfbdc3044bede63951a019b';
+const apiKey = '5d352455cb38a8adbbd534e300e94460  ';
 
 function App() {
   const [cities, setCities] = useState([]);
@@ -37,7 +37,8 @@ function App() {
         } else {
           alert("Ciudad no encontrada");
         }
-      });
+      })
+      .catch(err => console.log(err));
   }
   function onFilter(ciudadId) {
     let ciudad = cities.filter(c => c.id === parseInt(ciudadId));
@@ -60,7 +61,6 @@ function App() {
         <Route 
         path='/ciudad/:id'
         render={ ({ match }) => <Ciudad city={onFilter(match.params.id)} /> }
-
         />
       </Switch>
     </div>
