@@ -1,14 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&display=swap');
+
+
 .navbar {
     height: 56px;
     width: 100%;
     top: 0;
     left: 0;
-    background-color: #303236;
+    background-color: #2B2E4A;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
     box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+.navbar div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 500;
+}
+
+#logoHenry {
+    margin-right: 10px;
 }
 
 .navbar nav {
@@ -31,17 +47,24 @@
     height: 100%;
     width: auto;
     align-items: center;
+    justify-content: center;
 }
 
-.list-item a {
+.list a {
+    margin-left: 10px;
     color: white;
-    height: 100%;
-    padding: 16px 10px;
-    border-bottom: 4px solid transparent;
+    text-decoration: none;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
 }
 
-.list-item a:hover,
-.list-item a.active {
-    background-color: #808080;
-    color: white;
+.list a p {
+    margin: 5px;
+}
+
+.list a:hover {
+    color: #E84545;
 }

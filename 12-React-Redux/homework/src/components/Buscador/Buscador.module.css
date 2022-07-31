@@ -1,0 +1,108 @@
+.swidth {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.searchContainer {
+  background-color: #2B2E4A;
+  width: 60%;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.searchTitle {
+  color: #ffffff;
+  padding: 0 5px;
+  background-image: linear-gradient(0, #E84545 50%, transparent 50%);
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: row;
+    margin-left: -10px;
+}
+
+.searchInput {
+    width: 256px;
+    display: flex;
+    padding: 6px 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 1.2em;
+}
+
+.searchSubmit {
+    margin-left: -35px;
+    cursor: pointer;
+    padding: 0;
+    margin-top: 2px;
+    border: none;
+    transition: 0.3s;
+}
+
+.searchSubmit:hover {
+    color: #E84545;
+}
+
+.searchInput:focus {
+    outline: none;
+}
+
+.ulStyle {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 50%;
+}
+
+.listMovies {
+    display: flex;
+    list-style: none;
+    margin-top: 10px;
+    padding: 5px 10px;
+    justify-content: space-between;
+    font-size: 1.2em;
+    border-bottom: 2px solid #E84545;
+}
+
+.isActive {
+    color: red;
+}
+
+.movie {
+    transition: 0.4s;
+}
+
+.listMovies button {
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+.listMovies button:hover {
+    color: #FECD1A;
+}
+
+.movie:hover {
+    color:#E84545;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
